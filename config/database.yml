@@ -8,8 +8,4 @@ default: &default
 
 development:
   <<: *default
-  database: catarse_development
-
-test:
-  <<: *default
-  database: catarse_test
+  database: d1p3fupc8dm0mb

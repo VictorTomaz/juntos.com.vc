@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  url: postgres://msvrcdoktojtmi:y_suwaVAZI5lsSfhVuR4aqJjj5@ec2-54-221-226-148.compute-1.amazonaws.com:5432/d261m2ri8p855a
+
+test:
+  <<: *default
+  url: postgres://wesbolsiwhtbkt:3lI6Z_EZFttcKVGaREmNEaFDCF@ec2-23-21-219-12.compute-1.amazonaws.com:5432/d1p3fupc8dm0mb

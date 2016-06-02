@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: ec2-23-21-219-12.compute-1.amazonaws.com
+  pool: 5
+  username: wesbolsiwhtbkt
+  password: 3lI6Z_EZFttcKVGaREmNEaFDCF
+
+development:
+  <<: *default
+  database: catarse_development
+
+test:
+  <<: *default
+  database: catarse_test

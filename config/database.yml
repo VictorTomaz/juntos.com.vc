@@ -1,11 +1,18 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  pool: 5
 
 development:
-  <<: *default
-  url: postgres://msvrcdoktojtmi:y_suwaVAZI5lsSfhVuR4aqJjj5@ec2-54-221-226-148.compute-1.amazonaws.com:5432/d261m2ri8p855a
+  <<: *default 
+  host: ec2-23-21-219-12.compute-1.amazonaws.com
+  database: d1p3fupc8dm0mb
+  username: wesbolsiwhtbkt
+  password: 3lI6Z_EZFttcKVGaREmNEaFDCF
 
 test:
   <<: *default
-  url: postgres://wesbolsiwhtbkt:3lI6Z_EZFttcKVGaREmNEaFDCF@ec2-23-21-219-12.compute-1.amazonaws.com:5432/d1p3fupc8dm0mb
+  host: ec2-54-221-226-148.compute-1.amazonaws.com
+  database: d261m2ri8p855a
+  username: msvrcdoktojtmi
+  password: y_suwaVAZI5lsSfhVuR4aqJjj5
